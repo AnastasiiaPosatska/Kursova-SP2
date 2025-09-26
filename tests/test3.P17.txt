@@ -9,4 +9,4 @@ INPUT(_b0b);
 		FOR _b0b -> k0k DOWNTO 1 DO
 			_x0x + 1 -> _x0x;
 OUTPUT(_x0x);
-ENDBLOCK;
+ENDBLOCK
