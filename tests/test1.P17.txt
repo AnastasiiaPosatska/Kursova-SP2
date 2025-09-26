@@ -1,0 +1,14 @@
+STARTPROGRAM
+STARTBLOCK VARIABLE INT16 _a1a, _b2b, _x3x, _y4y;
+INPUT(_a1a);
+INPUT(_b2b);
+OUTPUT(_a1a + _b2b);
+OUTPUT(_a1a - _b2b);
+OUTPUT(_a1a * _b2b);
+OUTPUT(_a1a DIV _b2b);
+OUTPUT(_a1a MOD _b2b);
+(_a1a - _b2b) * 10 + (_a1a + _b2b) DIV 10 -> _x3x;
+_x3x + _x3x MOD 10 -> _y4y;
+OUTPUT(_x3x);
+OUTPUT(_y4y);
+ENDBLOCK;
