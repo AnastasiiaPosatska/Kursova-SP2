@@ -11,4 +11,4 @@ OUTPUT(_a1a MOD _b2b);
 _x3x + _x3x MOD 10 -> _y4y;
 OUTPUT(_x3x);
 OUTPUT(_y4y);
-ENDBLOCK;
+ENDBLOCK

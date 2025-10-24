@@ -37,4 +37,4 @@ IF (_a0a << (_b0b + _c0c)) {
 	0 -> _y2y;
 }
 OUTPUT(_y2y);
-ENDBLOCK;
+ENDBLOCK

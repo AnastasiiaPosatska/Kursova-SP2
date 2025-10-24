@@ -2,7 +2,6 @@ STARTPROGRAM
 STARTBLOCK VARIABLE INT16 _a0a, _b0b, _i0i, _j0j, _k0k, _x0x;
 INPUT(_a0a);
 INPUT(_b0b);
-IF _a0a << _bob {
 	FOR _bob -> _i0i DOWNTO _a0a DO 
 		OUTPUT(_ioi * _i0i);
 
@@ -10,7 +9,4 @@ IF _a0a << _bob {
 		FOR _b0b -> k0k DOWNTO 1 DO
 			_x0x + 1 -> _x0x;
 OUTPUT(_x0x);
-ENDBLOCK;
-} ELSE {
-ENDBLOCK;
-}
+ENDBLOCK
