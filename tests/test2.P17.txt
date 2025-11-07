@@ -15,6 +15,7 @@ IF _a0a >>_b0b {
 	} ELSE {
 		_c0c -> _x0x;
 	}
+}
 OUTPUT(_x0x);
 
 IF _a0a = _b0b && _a0a = _c0c && _b0b = _c0c {
