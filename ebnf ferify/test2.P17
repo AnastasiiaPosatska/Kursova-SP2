@@ -1,0 +1,41 @@
+STARTPROGRAM ;
+STARTBLOCK VARIABLE INT16 _a0a, _b0b, _c0c, _x0x, _y0y, _y1y, _y2y;
+INPUT(_a0a)
+INPUT(_b0b)
+INPUT(_c0c)
+IF _a0a >>_b0b {
+	IF _a0a >> _c0c {
+		_a0a -> _x0x
+	} ELSE {
+		_c0c -> _x0x
+	}
+} ELSE {
+	IF _b0b >> _x0x{
+		_b0b -> _x0x
+	} ELSE {
+		_c0c -> _x0x
+	}
+}
+OUTPUT(_x0x)
+
+IF _a0a = _b0b && _a0a = _c0c && _b0b = _c0c {
+	1 -> _y0y
+} ELSE {
+	0 -> _y0y
+}
+OUTPUT(_y0y)
+
+IF _a0a << 0 || _b0b << 0 || _c0c << 0 {
+	-1 -> _y1y
+} ELSE {
+	0 -> _y1y
+}
+OUTPUT(_y1y)
+
+IF (_a0a << (_b0b + _c0c)) {
+	10 -> _y2y
+} ELSE {
+	0 -> _y2y
+}
+OUTPUT(_y2y)
+ENDBLOCK
